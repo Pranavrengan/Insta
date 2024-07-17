@@ -18,8 +18,8 @@ class _HomepageState extends State<Homepage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: ListView(
-        scrollDirection: Axis.vertical,
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Column(
             children: [
@@ -32,7 +32,7 @@ class _HomepageState extends State<Homepage> {
                   height: 450,
                   decoration: BoxDecoration(
                     border: Border.all(
-                      color: Color.fromARGB(126, 177, 173, 173),
+                      color: const Color.fromRGBO(214, 214, 214, 1),
                       width: 0,
                       strokeAlign: BorderSide.strokeAlignOutside,
                     ),
@@ -200,103 +200,6 @@ class _HomepageState extends State<Homepage> {
                 ],
               ),
             ),
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          Center(
-            child: Text('Get the app.'),
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 180),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Center(
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(8),
-                    child: Container(
-                      height: 50,
-                      width: 150,
-                      color: Colors.black,
-                      child: Row(
-                        children: const [
-                          SizedBox(
-                            height: 50,
-                            width: 60,
-                          ),
-                          SizedBox(
-                            height: 50,
-                            width: 90,
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  'Get it on',
-                                  style: TextStyle(
-                                      fontSize: 12, color: Colors.white),
-                                ),
-                                Text(
-                                  'Google Play',
-                                  style: TextStyle(
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 16),
-                                ),
-                              ],
-                            ),
-                          )
-                        ],
-                      ),
-                    ),
-                  ),
-                ),
-                Center(
-                  child: Container(
-                    height: 50,
-                    width: 150,
-                    color: Colors.black,
-                    child: Row(
-                      children: const [
-                        SizedBox(
-                          height: 50,
-                          width: 60,
-                        ),
-                        SizedBox(
-                          height: 50,
-                          width: 90,
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                'Get it from',
-                                style: TextStyle(
-                                    fontSize: 12, color: Colors.white),
-                              ),
-                              Text(
-                                'Microsoft',
-                                style: TextStyle(
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 16),
-                              ),
-                            ],
-                          ),
-                        )
-                      ],
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ),
-          SizedBox(
-            height: 50,
           ),
         ],
       ),
